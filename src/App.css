@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(14, 14, 18);
+  color: antiquewhite;
+}
+
+main {
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input[type="datetime-local"] {
+  color: #777;
+}
+
+form div.basic {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(236, 59, 94);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+div.transactions {
+  margin-top: 15px;
+}
+
+div.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top:1px solid #30313d;
+}
+div.transaction:first-child{
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1rem;
+}
+
+div.transaction div.description {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price.red {
+  color: rgb(189, 73, 73);
+}
+
+div.price.green {
+  color: rgb(72, 202, 72);
+}
+
+div.transaction div.datetime{
+  font-size: 0.7rem;
+  color: #aaa;
+}
+form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+}
